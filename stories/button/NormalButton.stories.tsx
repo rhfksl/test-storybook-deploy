@@ -1,4 +1,3 @@
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import NormalButton from '~/components/button/NormalButton';
@@ -11,11 +10,11 @@ interface INormalButtonProps {
 };
 
 export default {
-  title: 'Nemo/Button',
+  title: 'Nemo/Button/Normal',
   component: NormalButton,
   argTypes: {
-    width: { control: 'text' },
     text: { control: 'text' },
+    width: { control: 'text' },
     backgroundColor: { control: false },
     style: { control: false },
   },

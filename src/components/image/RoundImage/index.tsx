@@ -4,14 +4,12 @@ import { NemoTheme } from '~/lib/style/theme';
 import BaseImage from '../base/BaseImage';
 
 interface IRoundImageProps {
-  width?: string;
   imageSource: ImageSourcePropType;
   style?: { [x: string]: any };
 };
 
 const RoundImage = (props: IRoundImageProps) => {
   const {
-    width = NemoTheme.RoundImage.Width,
     imageSource,
     style,
   } = props;
@@ -19,7 +17,7 @@ const RoundImage = (props: IRoundImageProps) => {
   return (
     <BaseImage
       imageSource={imageSource}
-      width={width}
+      width={NemoTheme.RoundImage.Width}
       height={NemoTheme.RoundImage.Height}
       borderRadius={NemoTheme.RoundImage.BorderRaidus}
       style={style}

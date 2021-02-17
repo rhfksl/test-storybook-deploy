@@ -1,8 +1,8 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
-import PrimaryButton from '~/components/button/PrimaryButton';
+import SecondaryButton from '~/components/button/SecondaryButton';
 
-interface IPrimaryButtonProps {
+interface ISecondaryButtonProps {
   text?: string;
   width?: string;
   onPress?: <T>(arg?: T) => void;
@@ -10,8 +10,8 @@ interface IPrimaryButtonProps {
 };
 
 export default {
-  title: 'Nemo/Button/Primary',
-  component: PrimaryButton,
+  title: 'Nemo/Button/Secondary',
+  component: SecondaryButton,
   argTypes: {
     text: { control: 'text' },
     width: { control: 'text' },
@@ -20,11 +20,11 @@ export default {
   },
 } as Meta;
 
-const Template: Story<IPrimaryButtonProps> = (args) => {
-  return <PrimaryButton {...args} />
+const Template: Story<ISecondaryButtonProps> = (args) => {
+  return <SecondaryButton {...args} />
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
-  text: "nemo"
+export const Secondary = Template.bind({});
+Secondary.args = {
+  text: "nemo",
 };

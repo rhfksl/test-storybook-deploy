@@ -4,9 +4,11 @@ import styled from 'styled-components/native';
 import BaseButton from '~/components/button/base/BaseButton';
 import { NemoTheme } from '~/lib/style/theme';
 
-interface INormalImageButtonProps {
+interface ILoginButtonProps {
   text?: string;
   width?: string;
+  backgroundColor?: string;
+  fontColor?: string;
   onPress?: <T>(arg?: T) => void;
   imageSource: ImageSourcePropType;
   style?: { [x: string]: any };
@@ -31,10 +33,12 @@ const ImageContainer = styled.View`
   align-items: center;
 `;
 
-const LoginButton = (props: INormalImageButtonProps) => {
+const LoginButton = (props: ILoginButtonProps) => {
   const {
     text,
     width,
+    backgroundColor = NemoTheme.LoginButton.BackgroundColor,
+    fontColor = NemoTheme.LoginButton.Text.FontColor,
     imageSource,
     onPress,
     style,
@@ -42,7 +46,7 @@ const LoginButton = (props: INormalImageButtonProps) => {
 
   return (
     <BaseButton
-      backgroundColor={NemoTheme.LoginButton.BackgroundColor}
+      backgroundColor={backgroundColor}
       width={width}
       height={NemoTheme.LoginButton.Height}
       borderRadius={NemoTheme.LoginButton.BorderRaidus}
@@ -57,7 +61,7 @@ const LoginButton = (props: INormalImageButtonProps) => {
           imageMarginRight={NemoTheme.LoginButton.Image.MarginRight}
         />
         <Text
-          fontColor={NemoTheme.LoginButton.Text.FontColor}
+          fontColor={fontColor}
           fontSize={NemoTheme.LoginButton.Text.FontSize}
         >
           {text}

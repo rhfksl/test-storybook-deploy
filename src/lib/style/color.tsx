@@ -1,0 +1,31 @@
+export enum NemoColor {
+    Slategray10 = '#f5f7f7',
+    Slategray20 = '#dce0e4',
+    Slategray30 = '#b8bfc4',
+    Slategray40 = '#9ea7ad',
+    Slategray50 = '#808991',
+    Slategray60 = '#636c73',
+    Slategray80 = '#40474d',
+    Slategray90 = '#303538',
+    Slategray100 = '#212529',
+    Redpink5 = '#fff6f8',
+    Redpink10 = '#ffe3e9',
+    Redpink30 = '#ff839a',
+    Redpink40 = '#ff5878',
+    Redpink50 = '#fe2c54',
+    Redpink60 = '#dc183d',
+    Redpink70 = '#aa1a35',
+    Redpink80 = '#761124',
+    Redpink90 = '#4f0b17',
+    Redpink100 = '#29060c',
+    White = '#fff',
+    PrimaryColor = Redpink50,
+    SecondaryColor = '#ffeaee',
+    KakaoTalk = "#fedd00",
+    BadgePrime = '#efe3ff',
+    Clustagent = '#7839d0',
+    Facilityfood = '#fe8c52',
+}
+
+
+
